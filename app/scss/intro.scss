@@ -7,7 +7,7 @@ section.introduction {
         justify-content: center;
         align-items: flex-end;
         position: relative;
-        min-height: 710px;
+        min-height: 100vh;
         width: 100%;
         background-image: url("images/photo-1480714378408-67cf0d13bc1b.jpg");
         background-size: cover;
@@ -15,11 +15,11 @@ section.introduction {
         z-index: 0;
 
         div.content {
-            min-height: 638px;
+            min-height: 90vh;
             width: 80%;
             @include flex-center;
 
-            div.container-box {
+            div.content-box {
                 display: flex;
                 justify-content: center;
                 align-items: flex-start;
@@ -73,6 +73,12 @@ section.introduction {
                     cursor: pointer;
                     font-family: montserrat;
                     font-weight: 600;
+                    transition: background-color 0.3s;
+
+                    &:hover {
+                        color: #000;
+                        background-color: #fff;
+                    }
                 }
             }
 
@@ -130,15 +136,27 @@ section.introduction {
 
                             input.text {
                                 width: 100%;
-                                padding: 10px;
+                                padding: 6px;
                                 border: none;
-                                border-bottom: 2px solid #D8D8D8;
-                                margin-bottom: 10px;
+                                border-bottom: 1px solid #D8D8D8;
+                                margin-bottom: 20px;
                                 color: black;
+                                font-size: 12px;
+                                font-family: montserrat;
+
+                                &:nth-of-type(3) {
+                                    margin-bottom: 30px;
+                                }
+                            }
+
+                            p {
+                                font-weight: 600;
+                                font-size: 16px;
+                                margin: 0;
+                                margin-bottom: 20px;
                             }
 
                             div.radio-wrapper {
-                                position: relative;
                                 
                                 input {
                                     display: none;
@@ -147,17 +165,50 @@ section.introduction {
                                 label {
                                     cursor: pointer;
                                     padding-left: 20px;
+                                    position: relative;
+                                    margin-right: 10px;
+                                    font-size: 12px;
 
                                     &::before {
                                         content: "";
                                         position: absolute;
-                                        
-                                        width: 15px;
-                                        height: 15px;
-                                        border: 2px solid #41D395;
+                                        left: 0;
+                                        bottom: 0;
+                                        width: 13px;
+                                        height: 13px;
+                                        border: 1px solid #41D395;
                                         border-radius: 50%;
                                     }
+
+                                    &::after {
+                                        content: "";
+                                        position: absolute;
+                                        left: 4px;
+                                        bottom: 4px;
+                                        width: 8px;
+                                        height: 8px;
+                                        background-color: #41D395;
+                                        border-radius: 50%;
+                                        opacity: 0;
+                                        transition: opacity 0.5s;
+                                    }
+
                                 }
+
+                                input:checked + label::after{
+                                    opacity: 1;
+                                }
+
+                                input:checked + label::before{
+                                    border: 2px solid #41D395;
+                                    width: 12px;
+                                    height: 12px;
+                                }
+
+                                input:checked + label{
+                                    font-weight: bold;
+                                }
+
                             }
                         }
                     }
@@ -169,7 +220,7 @@ section.introduction {
             position: absolute;
             bottom: 0;
             width: 100%;
-            min-height: 638px;
+            min-height: 100vh;
             background-color: #1C1C1C;
             opacity: 0.63;
             z-index: -1;
