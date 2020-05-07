@@ -1,13 +1,13 @@
 @import "mixins.scss";
 
 section.introduction {
+    margin-top: 72px;
 
-    div.background-container {
+    div.main-container {
         display: flex;
         justify-content: center;
         align-items: flex-end;
         position: relative;
-        min-height: 100vh;
         width: 100%;
         background-image: url("images/photo-1480714378408-67cf0d13bc1b.jpg");
         background-size: cover;
@@ -15,8 +15,8 @@ section.introduction {
         z-index: 0;
 
         div.content {
-            min-height: 90vh;
-            width: 80%;
+            min-height: 78vh;
+            width: 82%;
             @include flex-center;
 
             div.content-box {
@@ -40,7 +40,7 @@ section.introduction {
                 p.short-text {
                     position: relative;
                     color: #fff;
-                    font-size: 2.2rem;
+                    font-size: 36px;
                     font-weight: 600;
                     margin: 0;
                     line-height: 43px;
@@ -60,7 +60,7 @@ section.introduction {
                 p.long-text {
                     color: #fff;
                     font-weight: 600;
-                    font-size: 1rem;
+                    font-size: 16px;
                     margin-bottom: 35px;
                 }
 
@@ -111,7 +111,7 @@ section.introduction {
                         }
                         p span {
                             text-transform: uppercase;
-                            color: #E27866;
+                            color: $brand-color-redish;
                         }
                     }
 
@@ -206,7 +206,8 @@ section.introduction {
                                 }
 
                                 input:checked + label{
-                                    font-weight: bold;
+                                    font-weight: 600;
+                                    font-size: 12px;
                                 }
 
                             }
@@ -220,10 +221,53 @@ section.introduction {
             position: absolute;
             bottom: 0;
             width: 100%;
-            min-height: 100vh;
+            min-height: 100%;
             background-color: #1C1C1C;
             opacity: 0.63;
             z-index: -1;
+        }
+    }
+
+    div.social-media {
+        @include flex-center;
+        width: 100%;
+        min-height: 13vh;
+        background-color: #fff;
+
+        div.content {
+            width: 82%;
+            display: flex;
+            justify-content: space-between;
+
+
+            div.text-container {
+                display: flex;
+                flex-direction: column;
+                width: 40%;
+
+                p.heading {
+                    font-size: 20px;
+                    font-weight: 600;
+                    margin: 0;
+                    margin-bottom: 5px;
+                }
+
+                p.text {
+                    font-size: 14px;
+                    margin: 0;
+                        line-height: 20px;
+                }
+            }
+
+            div.img-container {
+                width: 55%;
+                display: flex;
+                justify-content: space-between;
+
+                img {
+                    cursor: pointer;
+                }
+            }
         }
     }
 }

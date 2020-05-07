@@ -1,0 +1,66 @@
+header {
+    @include flex-center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 72px;
+    background-color: #1C1C1C;
+    z-index: 99;
+
+    div.content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+        width: 82%;
+        
+        img {
+            height: 100%;
+            width: 120px;
+        }
+
+        nav {
+            
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+
+                li {
+                    float: left;
+                    font-size: 0.875rem;
+                    width: auto;
+                    margin-right: 2.6vw;
+
+                    &:nth-last-of-type(1) {
+                        margin: 0;
+                    }
+                  }
+                  
+                  li a {
+                    position: relative;
+                    color: white;
+                    opacity: 0.69;
+                    text-decoration: none;
+                    z-index: 100;
+
+                    &:hover {
+                        opacity: 1;
+
+                        &:after {
+                            content: "";
+                            position: absolute;
+                            left: 0;
+                            bottom: -1px;
+                            width: 100%;
+                            height: 2px;
+                            background-color: crimson;
+                        }
+                    }
+
+                  }
+            }
+        }
+    }
+}
