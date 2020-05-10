@@ -24,7 +24,7 @@ section.features {
             display: flex;
             flex-shrink: 1;
             width: 82%;
-            height: 60%;
+            height: 65%;
 
             div.option-box {
                 display: flex;
@@ -119,26 +119,70 @@ section.features {
                         }
 
                         div.image.three {
-                            background-image: url(images/bhupinder-singh-Vs5oKuS1gmU-unsplash.jpg);
+                            background-image: url(images/bhupinder-singh-Vs5oKuS1gmU-unsplash-min.jpg);
                         }
 
                         div.image.four {
-                            background-image: url(images/gijs-coolen-CRmcBeINxtg-unsplash.jpg);
+                            background-image: url(images/gijs-coolen-CRmcBeINxtg-unsplash-min.jpg);
                         }
 
                         div.image.five {
-                            background-image: url(images/luemen-carlson-Sr-0bIyNkWc-unsplash.jpg);
+                            background-image: url(images/luemen-carlson-Sr-0bIyNkWc-unsplash-min.jpg);
                         }
 
                         div.image.six {
-                            background-image: url(images/nariman-mesharrafa-ehjyBswUHws-unsplash.jpg);
+                            background-image: url(images/nariman-mesharrafa-ehjyBswUHws-unsplash-min.jpg);
                         }
                     }
 
                     .content-box-bottom {
-                        @include flex-center;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
                         width: 100%;
                         height: 54%;
+
+                        div.text-box {
+                            @include flex-center;
+                            flex-direction: column;
+                            height: 100%;
+                            width: 59%;
+                            font-size: 14px;
+                            color: #fff;
+                        }
+
+                        div.image-box {
+                            margin-top: 25px;
+                            min-width: 365px;
+                            height: 175px;
+                            background-image: url(images/steps.jpg);
+                            background-size: cover;
+                            background-position: center;
+
+                            div.hover {
+                                @include flex-center;
+                                width: 100%;
+                                height: 100%;
+                                background-color: $brand-color-redish;
+                                opacity: 0;
+                                transition: opacity 0.4s;
+                                font-size: 20px;
+                                color: #fff;
+                                font-weight: bold;
+
+                                &:hover {
+                                    opacity: 0.8;
+                                }
+                            }
+                        }
+
+                        div.image-box.two {
+                            background-image: url(images/gijs-coolen-Wxr7JbfGNtM-unsplash-min.jpg);
+                        }
+
+                        div.image-box.three {
+                            background-image: url(images/evan-wise-emWsmLNossA-unsplash-min.jpg);
+                        }
                     }
                 }
 
