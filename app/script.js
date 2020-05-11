@@ -19,3 +19,16 @@ for (i = 0; i < optionBlocks.length; i++){
 
     });
 }
+
+var mySwiper = new Swiper ('.swiper-container', {
+
+    direction: 'horizontal',
+    loop: false,
+    slidesPerView: 3,
+    spaceBetween: 120,
+
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  })
