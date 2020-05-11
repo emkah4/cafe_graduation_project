@@ -124,7 +124,11 @@ section.introduction {
                         font-size: 1.25rem;
                         font-family: montserrat;
                         color: #fff;
-                        cursor: pointer;
+                        cursor: pointer;s
+
+                        &:hover {
+                            font-weight: 700;
+                        }
                     }
 
                     div.input-container {

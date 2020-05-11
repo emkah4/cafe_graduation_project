@@ -3,8 +3,8 @@ section.pricing {
     div.main-container {
         @include flex-center;
         width: 100%;
-        min-height: 110vh;
         background-color: #6696E2;
+        padding: 100px 0;
 
         div.content {
             width: 82%;

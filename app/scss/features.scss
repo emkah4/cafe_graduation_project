@@ -4,12 +4,12 @@ section.features {
     div.main-container {
         position: relative;
         width: 100%;
-        height: 78vh;
         background-image: url(images/christoffer-engstrom-503481-unsplash-compressor.jpg);
         background-size: cover;
         background-position: center;
         z-index: 0;
         @include flex-center;
+        padding: 115px 0;
 
         div.gradient {
             position: absolute;
@@ -31,7 +31,6 @@ section.features {
                 flex-direction: column;
                 justify-content: space-between;
                 align-items: center;
-                height: 100%;
                 width: 15%;
 
                 div.option-block {
@@ -143,7 +142,9 @@ section.features {
                         height: 54%;
 
                         div.text-box {
-                            @include flex-center;
+                            display: flex;
+                            justify-content: center;
+                            align-self: flex-start;
                             flex-direction: column;
                             height: 100%;
                             width: 59%;

@@ -2,17 +2,16 @@ section.about {
 
     div.main-container {
         width: 100%;
-        height: 156vh;
         
 
         div.top-section {
             width: 100%;
-            height: 50%;
             background-color: #000;
             @include flex-center;
+            padding: 90px 0;
 
             div.content {
-                display: flex;
+                @include flex-center;
                 flex-shrink: 1;
                 width: 82%;
                 height: 70%;
@@ -45,6 +44,7 @@ section.about {
                     }
 
                     div.text-block.top {
+                        margin-bottom: 45px;
 
                             p {
                             font-size: 14px;
@@ -77,6 +77,7 @@ section.about {
                             flex-shrink: 1;
                             height: 50%;
                             width: 100%;
+                            margin-bottom: 35px;
 
                             div.image-box {
                                 height: 100%;
@@ -115,20 +116,20 @@ section.about {
         div.bottom-section {
             @include flex-center;
             width: 100%;
-            height: 50%;
+            padding: 90px 0;
 
             div.content {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 width: 82%;
-                height: 70%;
 
                 div.awesome-container {
                     @include flex-center;
                     flex-direction: column;
                     width: 100%;
                     height: 40%;
+                    margin-bottom: 65px;
 
                     p {
                         margin: 0;
@@ -139,31 +140,37 @@ section.about {
                             font-size: 36px;
                             font-weight: 600;
                             margin-bottom: 50px;
-                        }
 
-                        &:after {
-                            position: absolute;
-                            content: "";
-                            background-color: $brand-color-redish;
-                            width: 65px;
-                            height: 2px;
-                            left: 190px;
-                            bottom: -25px;
+                            &:after {
+                                position: absolute;
+                                content: "";
+                                background-color: $brand-color-redish;
+                                width: 65px;
+                                height: 2px;
+                                left: 190px;
+                                bottom: -25px;
+                            }
                         }
                     }
                 }
 
                 div.block-container {
                     display: flex;
-                    justify-content: space-between;
+                    justify-content: center;
+                    align-items: flex-start;
                     width: 80%;
-                    height: 60%;
+                    min-height: 60%;
 
                     div.block {
                         width: 280px;
                         height: 100%;
                         @include flex-center;
                         flex-direction: column;
+                        margin-right: 30px;
+
+                        &:nth-of-type(3) {
+                            margin: 0;
+                        }
 
                         p {
                             text-align: center;
