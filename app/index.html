@@ -41,17 +41,19 @@
                                     <div class="input-box">
                                         <p>Your details</p>
                                         <form>
-                                            <input class="text" type="text" placeholder="First name">
-                                            <input class="text" type="text" placeholder="Last name">
-                                            <input class="text" type="tel" placeholder="Phone number">
+                                            <div id="name-validation"><input class="text no-text" id="name" type="text" placeholder="First name"></div>
+                                            <div id="surname-validation"><input class="text" id="surname" type="text" placeholder="Last name"></div>
+                                            <div id="phone-number-validation"><input class="text" id="phone-number" type="tel" placeholder="Phone number"></div>
                                         </form>
                                         <p>Type of subscription</p>
                                         <div class="radio-wrapper">
                                             <form>
-                                                <input class="radio" type="radio" id="monthly" name="radio">
-                                                <label for="monthly">MONTHLY</label>
-                                                <input class="radio" type="radio" id="yearly" name="radio">
-                                                <label for="yearly">YEARLY</label>
+                                                <div id="subscription-validation">
+                                                    <input class="radio" type="radio" id="monthly" name="radio">
+                                                    <label for="monthly">MONTHLY</label>
+                                                    <input class="radio" type="radio" id="yearly" name="radio">
+                                                    <label for="yearly">YEARLY</label>
+                                                </div>
                                             </form>
                                         </div>
                                     </div>
@@ -98,10 +100,14 @@
                             <div class="content-box-top">
                                 <p>Tabs with soft transitioning effect. Explained propriety of out perpetual his you.</p>
                                 <div class="image one">
-                                    <div class="hover">Nature</div>
+                                    <div class="hover">
+                                        <span>Nature</span>
+                                    </div>
                                 </div>
                                 <div class="image two">
-                                    <div class="hover">Food</div>
+                                    <div class="hover">
+                                        <span>Food</span>
+                                    </div>
                                 </div>
                             </div>
                             <div class="content-box-bottom">
@@ -393,7 +399,13 @@
                 </div>
             </div>
         </section>
-        <section class="contact"></section>
+        <section class="contact">
+            <div class="main-container">
+                <div class="content">
+                    
+                </div>
+            </div>
+        </section>
     </main>
     <footer></footer>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>

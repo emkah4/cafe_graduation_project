@@ -32,10 +32,11 @@ section.reviews {
             }
 
             div.swiper-container {
-                min-height: 235px;
+                min-height: 350px;
 
-                div.swiper-pagination {
-                    bottom: 0;
+                div.swiper-wrapper {
+                    display: flex;
+                    align-items: flex-end;
                 }
 
                 div.swiper-slide {
@@ -101,12 +102,25 @@ section.reviews {
                     }
                 }
 
-                .swiper-pagination-bullet {
-                    background: red;
-                }
+                div.swiper-pagination {
+                    
 
-                .swiper-pagination-bullet-active {
-                    background: rebeccapurple;
+                    .swiper-pagination-bullet {
+                        width: 10px;
+                        height: 10px;
+                        background: none;
+                        border: 1px solid $brand-color-redish;
+                        margin-right: 15px;
+                        opacity: 1;
+
+                        &:nth-last-child(1) {
+                            margin: 0;
+                        }
+                    }
+    
+                    .swiper-pagination-bullet-active {
+                        background: $brand-color-redish
+                    }
                 }
             }
         }

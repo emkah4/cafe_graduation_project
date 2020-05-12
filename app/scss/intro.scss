@@ -1,5 +1,3 @@
-@import "mixins.scss";
-
 section.introduction {
     margin-top: 72px;
 
@@ -15,8 +13,9 @@ section.introduction {
         z-index: 0;
 
         div.content {
-            min-height: 78vh;
             width: 82%;
+            padding-top: 75px;
+            padding-bottom: 140px;
             @include flex-center;
 
             div.content-box {
@@ -24,7 +23,6 @@ section.introduction {
                 justify-content: center;
                 align-items: flex-start;
                 width: 100%;
-                height: 500px;
             }
 
             div.download-container {
@@ -151,6 +149,20 @@ section.introduction {
                                 &:nth-of-type(3) {
                                     margin-bottom: 30px;
                                 }
+
+                            }
+
+                            div.non-valid {
+                                position: relative;
+                                
+                                &:after {
+                                    position: absolute;
+                                    content: "Please enter a valid value";
+                                    color: red;
+                                    left: 5px;
+                                    bottom: 2px;
+                                    font-size: 12px;
+                                }
                             }
 
                             p {
@@ -161,6 +173,19 @@ section.introduction {
                             }
 
                             div.radio-wrapper {
+
+                                div.non-checked {
+                                    position: relative;
+
+                                    &:after {
+                                        position: absolute;
+                                        content: "Please select a subscription";
+                                        color: red;
+                                        bottom: -20px;
+                                        left: 0;
+                                        font-size: 12px;
+                                    }
+                                }
                                 
                                 input {
                                     display: none;
