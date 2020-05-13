@@ -16,18 +16,17 @@ section.introduction {
             width: 82%;
             padding-top: 75px;
             padding-bottom: 140px;
-            @include flex-center;
 
             div.content-box {
                 display: flex;
-                justify-content: center;
-                align-items: flex-start;
+                justify-content: space-between;
                 width: 100%;
             }
 
             div.download-container {
                 min-height: 450px;
-                width: 60%;
+                margin-right: 20px;
+
 
                 img {
                     height: 100px;
@@ -82,9 +81,7 @@ section.introduction {
 
             div.sign-up-container{
                 min-height: 450px;
-                width: 40%;
                 display: flex;
-                justify-content: flex-end;
 
                 div.window {
                     display: flex;
@@ -260,8 +257,8 @@ section.introduction {
     div.social-media {
         @include flex-center;
         width: 100%;
-        min-height: 13vh;
         background-color: #fff;
+        padding: 20px 0;
 
         div.content {
             width: 82%;

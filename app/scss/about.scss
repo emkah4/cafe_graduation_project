@@ -11,15 +11,16 @@ section.about {
             padding: 90px 0;
 
             div.content {
-                @include flex-center;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
                 flex-shrink: 1;
                 width: 82%;
-                height: 70%;
 
                 div.logo-box {
                     @include flex-center;
                     width: 50%;
-                    height: 100%;
+                    margin-right: 20px;
     
                     img {
                         width: 380px;
@@ -81,7 +82,7 @@ section.about {
 
                             div.image-box {
                                 height: 100%;
-                                width: 10%;
+                                margin-right: 10px;
 
                                 div.image-wrap {
                                     @include flex-center;
@@ -94,7 +95,6 @@ section.about {
 
                             div.text-box {
                                 height: 100%;
-                                width: 90%;
 
                                 p {
                                     margin: 0;
