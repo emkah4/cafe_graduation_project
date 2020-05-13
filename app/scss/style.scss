@@ -1,5 +1,9 @@
 @import "mixins.scss";
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -15,3 +19,5 @@ body {
 @import "about.scss";
 @import "pricing.scss";
 @import "reviews.scss";
+@import "contact.scss";
+@import "footer.scss";

@@ -11,7 +11,9 @@
 <body>
     <header>
         <div class="content">
-            <img src="images/Group 84.svg">
+            <a href="#intro">
+                <img src="images/Group 84.svg">
+            </a>
             <nav>
                 <ul>
                     <li><a href="#features">Features</a></li>
@@ -24,7 +26,7 @@
         </div>
     </header>
     <main>
-        <section class="introduction">
+        <section class="introduction" id="intro">
             <div class="main-container">
                 <div class="content">
                     <div class="content-box">
@@ -81,7 +83,7 @@
                 </div>
             </div>
         </section>
-        <section class="features">
+        <section class="features" id="features">
             <div class="main-container">
                 <div class="content">
                     <div class="option-box">
@@ -116,7 +118,9 @@
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
                                 </div>
                                 <div class="image-box">
-                                    <div class="hover">Explore</div>
+                                    <div class="hover">
+                                        <span>Explore</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -124,10 +128,14 @@
                             <div class="content-box-top">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                 <div class="image three">
-                                    <div class="hover">Animals</div>
+                                    <div class="hover">
+                                        <span>Animals</span>
+                                    </div>
                                 </div>
                                 <div class="image four">
-                                    <div class="hover">Travel</div>
+                                    <div class="hover">
+                                        <span>Travel</span>
+                                    </div>
                                 </div>
                             </div>
                             <div class="content-box-bottom">
@@ -136,7 +144,9 @@
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
                                 </div>
                                 <div class="image-box two">
-                                    <div class="hover">Create</div>
+                                    <div class="hover">
+                                        <span>Create</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -144,10 +154,14 @@
                             <div class="content-box-top">
                                 <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                                 <div class="image five">
-                                    <div class="hover">Motors</div>
+                                    <div class="hover">
+                                        <span>Motors</span>
+                                    </div>
                                 </div>
                                 <div class="image six">
-                                    <div class="hover">Exotics</div>
+                                    <div class="hover">
+                                        <span>Exotics</span>
+                                    </div>
                                 </div>
                             </div>
                             <div class="content-box-bottom">
@@ -156,7 +170,9 @@
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
                                 </div>
                                 <div class="image-box three">
-                                    <div class="hover">Master</div>
+                                    <div class="hover">
+                                        <span>Master</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -165,7 +181,7 @@
                 <div class="gradient"></div>
             </div>
         </section>
-        <section class="about">
+        <section class="about" id="about">
             <div class="main-container">
                 <div class="top-section">
                     <div class="content">
@@ -231,7 +247,7 @@
                 </div>
             </div>
         </section>
-        <section class="pricing">
+        <section class="pricing" id="pricing">
             <div class="main-container">
                 <div class="content">
                     <div class="top-section">
@@ -295,7 +311,7 @@
                 </div>
             </div>
         </section>
-        <section class="reviews">
+        <section class="reviews" id="reviews">
             <div class="main-container">
                 <div class="content">
                     <div class="text-container">
@@ -399,16 +415,53 @@
                 </div>
             </div>
         </section>
-        <section class="contact">
+        <section class="contact" id="contact">
             <div class="main-container">
                 <div class="content">
-                    
+                    <div class="text-section">
+                        <p>CONTACT US</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="form-section">
+                        <div class="form">
+                            <div class="input-container">
+                                <form>
+                                    <div id="name-validation1"><input class="text" id="name1" type="text" placeholder="First name"></div>
+                                    <div id="surname-validation1"><input class="text" id="surname1" type="text" placeholder="Last name"></div>
+                                    <div id="phone-number-validation1"><input class="text" id="phone-number1" type="tel" placeholder="Phone number"></div>
+                                </form>
+                            </div>
+                            <div class="radio-wrapper">
+                                <form>
+                                    <div id="type-validation">
+                                        <input class="radio" type="radio" id="personal" name="radio">
+                                        <label for="personal">PERSONAL</label>
+                                        <input class="radio" type="radio" id="company" name="radio">
+                                        <label for="company">COMPANY</label>
+                                    </div>
+                                </form>
+                            </div>
+                            <button class="send">SEND</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="content">
+            <div class="image-box">
+                <img src="images/facebook-logo.svg">
+                <img src="images/instagram-logo.svg">
+                <img src="images/twitter.svg">
+                <img src="images/pinterest.svg">
+                <img src="images/Group 87.svg">
+            </div>
+            <span class="copyright">© 2019 Cheshire County</span>
+        </div>
+    </footer>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="validation-script.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,183 @@
+section.contact {
+
+    div.main-container {
+        @include flex-center;
+        background-color: $brand-color-redish;
+        padding: 70px 0 50px 0;
+
+        div.content {
+            width: 82%;
+
+            div.text-section {
+                @include flex-center;
+                flex-direction: column;
+                width: 100%;
+                margin-bottom: 30px;
+
+                p {
+                    font-size: 14px;
+                    color: #fff;
+                    margin: 0;
+
+                    &:nth-of-type(1) {
+                        position: relative;
+                        font-size: 36px;
+                        font-weight: 600;
+                        margin-bottom: 50px;
+
+                        &:after {
+                            position: absolute;
+                            content: "";
+                            background-color: #41D395;
+                            width: 65px;
+                            height: 2px;
+                            left: 85px;
+                            bottom: -25px;
+                        }
+                    }
+                }
+            }
+
+            div.form-section {
+                @include flex-center;
+                width: 100%;
+                height: 320px;
+
+                div.form {
+                    display: flex;
+                    flex-direction: column;
+                    width: 390px;
+                    height: 100%;
+                    padding: 35px 65px;
+                    background-color: #fff;
+                    border-radius: 5px;
+
+                    div.input-container {
+                        @include flex-center;
+                        flex-direction: column;
+
+                            input.text {
+                                width: 260px;
+                                padding: 6px;
+                                border: none;
+                                border-bottom: 1px solid #D8D8D8;
+                                margin-bottom: 20px;
+                                color: black;
+                                font-size: 12px;
+                                font-family: montserrat;
+
+                                &:nth-of-type(3) {
+                                    margin-bottom: 30px;
+                                }
+
+                            }
+
+                            div.non-valid {
+                                position: relative;
+                                
+                                &:after {
+                                    position: absolute;
+                                    content: "Please enter a valid value";
+                                    color: red;
+                                    left: 5px;
+                                    bottom: 2px;
+                                    font-size: 12px;
+                                }
+                            }
+
+                            p {
+                                font-weight: 600;
+                                font-size: 16px;
+                                margin: 0;
+                                margin-bottom: 20px;
+                            }
+                    }
+
+                    div.radio-wrapper {
+                        margin-bottom: 40px;
+
+                        div.non-checked {
+                            position: relative;
+
+                            &:after {
+                                position: absolute;
+                                content: "Please select a type";
+                                color: red;
+                                bottom: -20px;
+                                left: 0;
+                                font-size: 12px;
+                            }
+                        }
+                        
+                        input {
+                            display: none;
+                        }
+
+                        label {
+                            cursor: pointer;
+                            padding-left: 20px;
+                            position: relative;
+                            margin-right: 10px;
+                            font-size: 12px;
+
+                            &::before {
+                                content: "";
+                                position: absolute;
+                                left: 0;
+                                bottom: 0;
+                                width: 13px;
+                                height: 13px;
+                                border: 1px solid #41D395;
+                                border-radius: 50%;
+                            }
+
+                            &::after {
+                                content: "";
+                                position: absolute;
+                                left: 4px;
+                                bottom: 4px;
+                                width: 8px;
+                                height: 8px;
+                                background-color: #41D395;
+                                border-radius: 50%;
+                                opacity: 0;
+                                transition: opacity 0.5s;
+                            }
+
+                        }
+
+                        input:checked + label::after{
+                            opacity: 1;
+                        }
+
+                        input:checked + label::before{
+                            border: 2px solid #41D395;
+                            width: 12px;
+                            height: 12px;
+                        }
+
+                        input:checked + label{
+                            font-weight: 600;
+                            font-size: 12px;
+                        }
+
+                    }
+
+                    button {
+                        height: 50px;
+                        width: 160px;
+                        margin: auto;
+                        border: none;
+                        background-color: #41D395;
+                        color: #fff;
+                        font-size: 15px;
+                        font-weight: 600;
+                        font-family: montserrat;
+                        border-radius: 5px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+footer {
+    @include flex-center;
+    background-color: black;
+
+    div.content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 82%;
+        padding: 52px 0;
+
+        div.image-box {
+
+            img {
+                margin-right: 110px;
+                cursor: pointer;
+
+                &:nth-last-of-type(1) {
+                    margin: 0;
+                }
+            }
+        }
+        .copyright {
+            font-size: 18px;
+            color: #fff;
+            opacity: 0.5;
+        }
+    }
+}
