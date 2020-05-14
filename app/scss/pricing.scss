@@ -8,7 +8,6 @@ section.pricing {
 
         div.content {
             width: 82%;
-            min-height: 88vh;
 
             div.top-section {
                 display: flex;
@@ -16,7 +15,7 @@ section.pricing {
                 align-items: center;
                 flex-direction: column;
                 width: 100%;
-                min-height: 26.4vh;
+                margin-bottom: 80px;
 
                 p {
                     color: #fff;
@@ -46,7 +45,6 @@ section.pricing {
                 display: flex;
                 justify-content: space-between;
                 align-items: flex-end;
-                min-height: 61.6vh;
 
                 div.pricing-block {
                     display: flex;
@@ -54,11 +52,6 @@ section.pricing {
                     align-items: center;
                     flex-direction: column;
                     width: 31%;
-                    min-height: 55.44vh;
-
-                    &:nth-of-type(2) {
-                        min-height: 61.6vh;
-                    }
 
                     div.price-container {
                         display: flex;

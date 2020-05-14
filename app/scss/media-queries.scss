@@ -431,3 +431,19 @@
     }
 }
 
+@media (max-width: 610px) {
+    header {
+
+        div.content {
+
+            nav {
+                @include flex-center;
+                
+                ul {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+

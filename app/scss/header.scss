@@ -75,3 +75,18 @@ header {
         }
     }
 }
+
+.icon {
+    position: relative;
+    cursor: pointer;
+}
+
+.burger-menu {
+    position: absolute;
+    left: 0;
+    bottom: -100vh;
+    width: 100%;
+    height: 100vh;
+    background-color: chartreuse;
+    opacity: 0.6;
+}
