@@ -46,18 +46,25 @@ section.contact {
                 div.form {
                     display: flex;
                     flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
                     width: 390px;
                     height: 100%;
-                    padding: 35px 65px;
                     background-color: #fff;
                     border-radius: 5px;
 
                     div.input-container {
                         @include flex-center;
+                        margin-top: 30px;
+                        width: 70%;
                         flex-direction: column;
 
+                        form {
+                            width: 100%;
+                        }
+
                             input.text {
-                                width: 260px;
+                                width: 100%;
                                 padding: 6px;
                                 border: none;
                                 border-bottom: 1px solid #D8D8D8;
@@ -94,6 +101,7 @@ section.contact {
                     }
 
                     div.radio-wrapper {
+                        width: 70%;
                         margin-bottom: 40px;
 
                         div.non-checked {

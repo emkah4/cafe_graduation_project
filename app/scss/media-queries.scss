@@ -50,6 +50,31 @@
     }
 }
 
+@media (max-width: 990px) {
+    
+    section.introduction {
+
+        div.main-container {
+
+            div.content {
+
+                div.content-box {
+                    flex-direction: column;
+
+                    div.download-container {
+                        margin-bottom: 50px;
+                    }
+
+                    div.sign-up-container {
+                        @include flex-center;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
 @media (max-width: 960px) {
 
     section.about {
@@ -126,6 +151,25 @@
             }
         }
     }
+
+    section.pricing {
+
+        div.main-container {
+
+            div.content {
+
+                div.bottom-section {
+                    flex-direction: column;
+                    @include flex-center;
+
+                    div.pricing-block {
+                        margin-bottom: 50px;
+                        width: 340px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 700px) {
@@ -153,12 +197,230 @@
                     div.awesome-container {
 
                         p {
+                            text-align: center;
 
                             &:nth-of-type(1) {
                                 font-size: 32px;
 
                                 &:after {
-                                    left: 165px;
+                                    left: 41%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    section.pricing {
+
+        div.main-container {
+
+            div.content {
+
+                div.top-section {
+                    
+                    p {
+                        text-align: center;
+
+                        &:nth-of-type(1) {
+
+                            &:after {
+                                left: 41%;
+                            }
+                        }
+                    }
+                }
+
+                div.bottom-section {
+
+                    div.pricing-block {
+                        width: 270px;
+                    }
+                }
+            }
+        }
+    }
+
+    section.features {
+
+        div.main-container {
+            
+            div.content {
+
+                div.option-box {
+
+                    div.option-block {
+                        margin-right: 10px;
+                    }
+                }
+
+                div.slide-box {
+    
+                    div.slide-block {
+    
+                        div.content-box-top {
+
+                            div.image-wrapper {
+
+                                div.image {
+                                    width: 140px;
+                                    height: 140px;
+                                    margin-right: 10px;
+
+                                    &:nth-child(even) {
+                                        margin: 0;
+                                    }
+                                }
+                            }
+                        }
+
+                        div.content-box-bottom {
+
+                            div.text-box {
+                                width: 290px;
+                            }
+
+                            div.image-box {
+                                min-width: 290px;
+                                height: 145px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    section.reviews {
+        
+        div.main-container {
+
+            div.content {
+
+                div.text-container {
+
+                    p {
+                        text-align: center;
+
+                        &:after {
+                            left: 41%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 450px) {
+
+    section.contact {
+
+        div.main-container {
+
+            div.content {
+
+                div.text-section {
+
+                    p {
+
+                        &:nth-of-type(2) {
+                            text-align: center;
+                        }
+                    }
+                }
+
+                div.form-section {
+
+                    div.form {
+                        width: 100%;
+
+                        div.radio-wrapper {
+                            width: 76%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+
+    section.introduction {
+
+        div.social-media {
+
+            div.content {
+                flex-direction: column;
+
+                div.text-container {
+                    display: flex;
+                    flex-direction: row;
+                    width: 100%;
+                    margin-bottom: 20px;
+
+                    p.heading {
+                        margin: 0;
+                        margin-right: 20px;
+                        @include flex-center;
+                    }
+
+                    p.text {
+                        @include flex-center;
+                        text-align: center;
+                    }
+                }
+
+                div.img-container {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1050px) {
+    footer {
+
+        div.content {
+            flex-direction: column;
+
+            div.image-box {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 30px;
+                
+                img {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 350px) {
+    section.introduction {
+
+        div.main-container {
+
+            div.content {
+
+                div.content-box {
+
+                    div.sign-up-container {
+
+                        div.window {
+                            
+                            div.free-trial {
+                                
+                                p {
+                                    font-size: 18px;
                                 }
                             }
                         }
