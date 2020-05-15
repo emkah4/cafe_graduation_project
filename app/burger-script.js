@@ -7,7 +7,6 @@ createBurger(activateWidth);
 activateWidth.addListener(createBurger);
 
 var removeWidth = window.matchMedia("(min-width: 610px)");
-deleteBurger(removeWidth);
 removeWidth.addListener(deleteBurger);
 
 function createBurger(activateWidth) {
