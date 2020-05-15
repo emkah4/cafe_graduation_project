@@ -32,7 +32,6 @@ function createBurger(activateWidth) {
             navBar.appendChild(menu);
 
             close.addEventListener('click', deleteBurgerOnClick);
-
             menu.innerHTML = '<ul class="active"><li><a href="#features">Features</a></li><li><a href="#about">About</a></li><li><a href="#pricing">Pricing</a></li><li><a href="#reviews">Reviews</a></li><li><a href="#contact">Contact</a></li></ul>';
             menu.addEventListener('click', deleteBurgerOnClick);
 
