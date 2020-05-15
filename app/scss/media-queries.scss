@@ -101,6 +101,28 @@
     }
 }
 
+@media (max-width: 847px) {
+    section.reviews {
+        
+        div.main-container {
+
+            div.content {
+
+                div.text-container {
+
+                    p {
+                        text-align: center;
+
+                        &:after {
+                            left: 45%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 900px) {
 
     section.features {
@@ -338,10 +360,6 @@
 
                     div.form {
                         width: 100%;
-
-                        div.radio-wrapper {
-                            width: 76%;
-                        }
                     }
                 }
             }
@@ -429,6 +447,25 @@
             }
         }
     }
+
+    section.contact {
+
+        div.main-container {
+
+            div.content {
+
+                div.form-section {
+
+                    div.form {
+
+                        div.radio-wrapper {
+                            width: 76%;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 610px) {
@@ -442,8 +479,15 @@
                 ul {
                     display: none;
                 }
+
+                ul.active {
+                    display: flex;
+                    flex-direction: column;
+                }
             }
         }
     }
 }
+
+
 
